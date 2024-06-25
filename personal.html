@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyal Devassy - Associate Software Developer</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* Light gray background for a professional look */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77A6B6 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('backgroundimage.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .showcase p {
+            font-size: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        .section {
+            padding: 40px 0;
+            border-bottom: #77A6B6 1px solid;
+            background: #f8f8f8; /* Slightly darker background for sections */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile-img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #77A6B6;
+        }
+        .section h2, .section h3 {
+            color: #333;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skills div, .projects div {
+            flex: 1 1 calc(33% - 20px);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .skills div ul, .projects div p {
+            margin: 10px 0 0 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+            border-top: #77A6B6 3px solid;
+        }
+        .resume-link {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .resume-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #77A6B6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+        .resume-link a:hover {
+            background: #5a8a9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Joyal Devassy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Welcome to My Personal Page</h1>
+            <p>Associate Software Developer</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-container">
+                <img src="personal.JPG" alt="Profile Photo" class="profile-img">
+                <div>
+                    <h2>About Me</h2>
+                    <p>Dedicated and reliable person who is willing to learn and work hard for the organization. Committed to becoming a software engineer with a passion for developing innovative solutions that simplify complex problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Data Structures</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Teamwork</li>
+                        <li>Leadership</li>
+                        <li>Active Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div>
+                    <h3>Phinder Phishing Website Detection System</h3>
+                    <p>Developed a Chrome browser plugin that detects phishing websites in real-time. Implemented the machine learning model in JavaScript to run entirely within the browser, ensuring better privacy and independence from network latency.</p>
+                </div>
+                <div>
+                    <h3>Traffic Offence Management Website</h3>
+                    <p>A website that allows traffic authorities to issue challans for traffic violations and enables users to pay fines online. Led the front-end development and contributed to the back-end development to ensure a seamless user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-link">
+                <a href="joyal_devassy_resume.pdf" download>Download My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Mob No: +91 8921581287</p>
+            <p>Email: <a href="mailto:joyaldevassy14@gmail.com">joyaldevassy14@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/joyaldevassy/">linkedin.com/in/joyaldevassy/</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Joyal Devassy &copy; 2024</p>
+    </footer>
+</body>
+</html>
